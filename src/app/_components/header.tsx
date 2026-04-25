@@ -27,7 +27,7 @@ export function Header() {
     { name: "Contato", href: "#contato" },
   ]
   return (
-    <header className="relative flex items-center justify-between p-4">
+    <header className="relative flex items-center justify-between px-4 h-16 ">
 
       <div className="flex items-center gap-2 text-emerald-600 font-bold text-xl">
         <PawPrint className="h-6 w-6" />
