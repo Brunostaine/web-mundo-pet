@@ -1,13 +1,16 @@
 import { PhoneForwarded } from "lucide-react";
 import Footer from "./_components/footer";
-import { Header } from "./_components/header";
-import { Hero } from "./_components/hero";
+import About from "./_components/about";
+import Header from "./_components/header";
+import Hero from "./_components/hero";
+
 
 export default function Home() {
   return (
     <main>
       <Header />
       <Hero />
+      <About />
       <Footer />
 
       <button

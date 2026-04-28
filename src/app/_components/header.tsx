@@ -15,7 +15,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-export function Header() {
+export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
