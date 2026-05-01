@@ -5,12 +5,10 @@ import { PawPrint } from "lucide-react";
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu"
+  NavigationMenuList
+} from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -27,7 +25,7 @@ export default function Header() {
     { name: "Contato", href: "#contato" },
   ]
   return (
-    <header className="relative flex items-center justify-between px-4 h-16 ">
+    <header className="sticky top-0 z-40 w-full flex items-center justify-between px-4 h-16 bg-white/80 backdrop-blur-md border-b">
 
       <div className="flex items-center gap-2 text-emerald-600 font-bold text-xl">
         <PawPrint className="h-6 w-6" />
