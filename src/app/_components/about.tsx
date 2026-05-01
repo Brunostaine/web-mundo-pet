@@ -1,13 +1,16 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Card, CardDescription, CardHeader } from "@/components/ui/card";
-import { CheckCircle2, CircleCheck, MessageSquareText } from "lucide-react";
+import { CheckCircle2, MessageSquareText } from "lucide-react";
 import Image from "next/image";
 
 export default function About() {
 
-  const data = [
+  interface AboutItem {
+    text: string;
+  }
+
+  const data: AboutItem[] = [
     { text: "Atendimento humanizado e focado no pet" },
     { text: "Profissionais altamente qualificados" },
     { text: "Ambiente seguro, higienizado e moderno" },
@@ -18,9 +21,39 @@ export default function About() {
     <section className="container mx-auto px-4 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4">
+          <div className="space-y-4">
+            <div className="relative h-64 w-full rounded-3xl overflow-hidden bg-slate-50">
+              <Image
+                src="/ware.png"
+                alt="Mascote Mundo Pet"
+                fill
+                className="object-contain p-4"
 
-        // TODO COLOCAR AS IMAGENS
+              />
+            </div>
+
+            <div className="bg-emerald-900 text-white p-8 rounded-3xl h-40 flex flex-col justify-center">
+              <span className="text-3xl font-bold">15+</span>
+              <p className="text-xs uppercase tracking-wider opacity-80">Anos de experiência</p>
+            </div>
+          </div>
+
+          <div className="space-y-4 pt-12">
+            <div className="bg-red-50 text-red-900 p-8 rounded-3xl h-32 flex flex-col justify-center">
+              <span className="text-3xl font-bold">50k+</span>
+              <p className="text-xs uppercase tracking-wider opacity-80">Pets atendidos</p>
+            </div>
+
+            <div className="relative h-80 w-full rounded-3xl overflow-hidden">
+              <Image
+                src="/man.png"
+                alt="Veterinário Mundo Pet"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
         </div>
 
         <div className="flex flex-col gap-4">
