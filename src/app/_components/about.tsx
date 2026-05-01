@@ -28,8 +28,8 @@ export default function About() {
                 src="/ware.png"
                 alt="Mascote Mundo Pet"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-contain p-4"
-
               />
             </div>
 
@@ -50,7 +50,8 @@ export default function About() {
                 src="/man.png"
                 alt="Veterinário Mundo Pet"
                 fill
-                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-contain p-4"
               />
             </div>
           </div>
